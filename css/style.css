@@ -50,16 +50,16 @@
   padding-top: 1%;
   margin: 0px;
 }
-#quote.span:first-child {
+#quote span:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
-  font-size: 50px;
+  font-size: 25px;
   font-weight: bolder;
 }
 
-#quote.span:nth-child(2) {
+#quote span:last-child {
   font-size: 20px;
   margin-top: 10px;
 }
@@ -82,8 +82,8 @@
   align-items: center;
   margin: 0px;
   color: white;
-  font-size: 50px;
-  padding-top: 2%;
+  font-size: 20px;
+  padding-top: 1%;
   z-index: 15;
 }
 
