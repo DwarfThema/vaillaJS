@@ -4,10 +4,12 @@ const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+const FLEX = "flex";
 
 function onLoginSubmit(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
+  loginForm.classList.remove(FLEX);
   const usernameThatTheUserWrote = loginInput.value;
   localStorage.setItem(USERNAME_KEY, usernameThatTheUserWrote);
   paintGreetings(usernameThatTheUserWrote);
@@ -22,6 +24,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
+  loginForm.classList.add(FLEX);
   loginForm.addEventListener("submit", onLoginSubmit);
 } else {
   paintGreetings(savedUsername);

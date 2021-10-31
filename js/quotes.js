@@ -1,7 +1,7 @@
 const quotes = [
   {
     quote: "중단하는 자는 승리하지 못한다.",
-    author: "박정희",
+    author: "",
   },
   {
     quote: "If you decide to go, then you gotta just get on with it.",

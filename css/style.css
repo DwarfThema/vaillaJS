@@ -1,3 +1,94 @@
 .hidden {
   display: none;
 }
+
+.bg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0%;
+  right: 0%;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  color: white;
+  font-size: 180px;
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+}
+
+#greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+  color: white;
+  font-size: 80px;
+  margin: 0px;
+}
+#quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding-top: 1%;
+  margin: 0px;
+}
+#quote.span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#quote.span:nth-child(2) {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  margin: 0px;
+  padding-top: 2%;
+  z-index: 13;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  color: white;
+  font-size: 50px;
+  padding-top: 2%;
+  z-index: 15;
+}
+
+#weather {
+  position: absolute;
+  top: 2%;
+  color: white;
+}
